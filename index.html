@@ -1,0 +1,703 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<script
+			type="text/javascript"
+			src="//www.midijs.net/lib/midi.js"
+		></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Shibe's Dev Site</title>
+		<!-- The style.css file allows you to change the look of your web pages.
+         If you include the next line in all your web pages, they will all share the same look.
+         This makes it easier to make new pages for your site. -->
+		<link
+			href="https://shibedevsite.nekoweb.org/flood.css"
+			rel="stylesheet"
+			type="text/css"
+			media="all"
+		/>
+		<script src="https://shibedevsite.nekoweb.org/flood.js"></script>
+
+		<script src="https://melonking.net/scripts/site-closer.js"></script>
+		<link
+			href="https://mczak.com/code/calculator/css/calculator.css"
+			rel="stylesheet"
+		/>
+
+		<script>
+			  // sc.closedPage = "closed.html"; // Optional: change the closed page URL
+			  shutItDown();
+		</script>
+	</head>
+	<body>
+		<div id="container">
+			<div id="headerArea">
+				<div id="header"></div>
+				<nav id="navbar">
+					<ul>
+						<li><a href="shibedevsite.neocities.org">Home</a></li>
+						<li><a href="/DDE/whatis.html">DDE</a></li>
+					</ul>
+				</nav>
+			</div>
+
+			<div id="flex">
+				<aside id="leftSidebar">
+					<h2>Updates</h2>
+					<div class="box">
+						<p>Hello Everyone!</p>
+						<ul style="padding-left:5;">
+							<li>
+								I have done a rework on my website so that it
+								looks cleaner!
+							</li>
+							<li>
+								It feels a lot better, so I should keep it this
+								way.
+							</li>
+							<li>
+								Most subdevisions of the website will keep the
+								older appearence until I can get to them.
+							</li>
+							<li>
+								For more information, click
+								<a href="old.html" target="_blank">here</a>
+							</li>
+						</ul>
+					</div>
+				</aside>
+				<main>
+					<h1>Welcome to my new website!</h1>
+					<p>
+						<strong>If you want to come in, feel free to!</strong>
+					</p>
+
+					<p>
+						This revamp has been in the works for a bit, but feel
+						free to give suggestions!
+					</p>
+					<p>
+						Then you can replace all of the text with your own. For
+						more customization, the CSS code has comments to explain
+						what each part changes. Please read through the code -
+						even if you have no idea what it means.
+					</p>
+					<p>
+						If you're feeling up for a challenge, I put together
+						<a
+							href="/sadgrl/learn/understanding-tweaking-my-layout-maker/"
+							target="_blank"
+						>
+							a guide
+						</a>
+						which goes over the structure of how this layout is
+						built, along with some specific tips on how to edit it
+						in certain ways.
+					</p>
+					<p>
+						Check the links in the sidebar for more resources to
+						build your own website!
+					</p>
+					<div class="calculator">
+						<div class="u4 display">
+							<div class="display-inner">
+								<div
+									class="display-text"
+									data-bind="text: display"
+								></div>
+							</div>
+						</div>
+
+						<button
+							id="calculator-button-c"
+							class="u1 calcbutton button-red"
+							data-bind="click: clear"
+						>
+							c
+						</button>
+						<button
+							id="calculator-button-backspace"
+							class="u1 calcbutton button-backspace button-gray"
+							data-bind="click: backspace"
+						>
+							⇤
+						</button>
+						<button
+							id="calculator-button-negate"
+							class="u1 calcbutton button-gray"
+							data-bind="click: negate"
+						>
+							±
+						</button>
+						<button
+							id="calculator-button-รท"
+							class="u1 calcbutton button-gray"
+							data-bind="click: operator"
+						>
+							÷
+						</button>
+						<button
+							id="calculator-button-7"
+							class="u1 calcbutton button-gray"
+							data-bind="click: number"
+						>
+							7
+						</button>
+						<button
+							id="calculator-button-8"
+							class="u1 calcbutton button-gray"
+							data-bind="click: number"
+						>
+							8
+						</button>
+						<button
+							id="calculator-button-9"
+							class="u1 calcbutton button-gray"
+							data-bind="click: number"
+						>
+							9
+						</button>
+						<button
+							id="calculator-button-x"
+							class="u1 calcbutton button-gray"
+							data-bind="click: operator"
+						>
+							x
+						</button>
+						<button
+							id="calculator-button-4"
+							class="u1 calcbutton button-gray"
+							data-bind="click: number"
+						>
+							4
+						</button>
+						<button
+							id="calculator-button-5"
+							class="u1 calcbutton button-gray"
+							data-bind="click: number"
+						>
+							5
+						</button>
+						<button
+							id="calculator-button-6"
+							class="u1 calcbutton button-gray"
+							data-bind="click: number"
+						>
+							6
+						</button>
+						<button
+							id="calculator-button--"
+							class="u1 calcbutton button-gray"
+							data-bind="click: operator"
+						>
+							-
+						</button>
+						<button
+							id="calculator-button-1"
+							class="u1 calcbutton button-gray"
+							data-bind="click: number"
+						>
+							1
+						</button>
+						<button
+							id="calculator-button-2"
+							class="u1 calcbutton button-gray"
+							data-bind="click: number"
+						>
+							2
+						</button>
+						<button
+							id="calculator-button-3"
+							class="u1 calcbutton button-gray"
+							data-bind="click: number"
+						>
+							3
+						</button>
+						<button
+							id="calculator-button-+"
+							class="u1 calcbutton button-gray"
+							data-bind="click: operator"
+						>
+							+
+						</button>
+						<button
+							id="calculator-button-0"
+							class="u2 calcbutton button-gray"
+							data-bind="click: number"
+						>
+							0
+						</button>
+						<button
+							id="calculator-button-."
+							class="u1 calcbutton button-gray"
+							data-bind="click: number"
+						>
+							.
+						</button>
+						<button
+							id="calculator-button-="
+							class="u1 calcbutton button-blue"
+							data-bind="click: operator"
+						>
+							=
+						</button>
+						<a
+							href="https://mczak.com/code/calculator/"
+							target="_blank"
+						>
+							Calculator For Your Website
+						</a>
+					</div>
+
+					<script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/2.1.0/knockout-min.js"></script>
+					<script>
+						var Calculator = function () {
+
+						    // Helper variable declarations
+						    var self = this,
+						        decimalMark = ".",
+						        sum = 0,
+						        prevOperator;
+
+						    // Define default values
+						    self.display = ko.observable("0");
+						    self.isShowingResult = ko.observable(false);
+
+						    // Callback for each number button
+						    self.number = function (item, event) {
+						        var button = event.target.innerText || event.target.textContent;
+
+						        // If a result has been shown, make sure we
+						        // clear the display before displaying any new numbers
+						        if (self.isShowingResult()) {
+						            self.clearDisplay();
+						            self.isShowingResult(false);
+						        }
+
+						        // Make sure we only add one decimal mark
+						        if (button == decimalMark && self.display().indexOf(decimalMark) > -1)
+						            return;
+
+						        // Make sure that we remove the default 0 shown on the display
+						        // when the user press the first number button
+						        var newValue = (self.display() === "0" && button != decimalMark) ? button : self.display() + button;
+						        // Update the display
+						        self.display(newValue);
+
+						    };
+
+						    // Callback for each operator button
+						    self.operator = function (item, event) {
+						        var button = event.target.innerText || event.target.textContent;
+						        // Only perform calculation if numbers
+						        // has been entered since last operator button was pressed
+						        if (!self.isShowingResult()) {
+						            // Perform calculation
+						            switch (prevOperator) {
+						                case "+":
+						                    sum = sum + parseFloat(self.display(), 10);
+						                    break;
+						                case "-":
+						                    sum = sum - parseFloat(self.display(), 10);
+						                    break;
+						                case "x":
+						                    sum = sum * parseFloat(self.display(), 10);
+						                    break;
+						                case "÷":
+						                    sum = sum / parseFloat(self.display(), 10);
+						                    break;
+						                default:
+						                    sum = parseFloat(self.display(), 10);
+						            };
+						      }
+
+						        // Avoid showing a result until you have at least
+						        // two terms to perform calculation on
+						        if (prevOperator)
+						            self.display(sum);
+
+						        // Make sure we don't try to calculate with the equal sign
+						        prevOperator = (button === "=") ? null : button;
+						        // Always set the calculator into showing result state
+						        // after an operator button has been pressed
+						        self.isShowingResult(true);
+						    };
+
+						    // Callback for negating a number
+						    self.negate = function () {
+						        // Disable the negate button when showing a result
+						        if (self.isShowingResult() || self.display() === "0")
+						            return;
+
+						        var newValue = (self.display().substr(0, 1) === "-") ? self.display().substr(1) : "-" + self.display();
+						        self.display(newValue);
+						    };
+
+						    // Callback for each backspace button
+						    self.backspace = function (item, event) {
+						        // Disable backspace if the calculator is shown a result
+						        if (self.isShowingResult())
+						            return;
+
+						        // Remove the last character, and make the display zero when
+						        // last character is removed
+						        if (self.display().length > 1) {
+						            self.display(self.display().substr(0, self.display().length - 1));
+						        } else {
+						            self.clearDisplay();
+						        }
+						    };
+
+						    // Clear the entire calculator
+						    self.clear = function () {
+						        prevOperator = null;
+						        self.clearDisplay();
+						        sum = 0;
+						    };
+
+						    // Clear just the display
+						    self.clearDisplay = function () {
+						        self.display("0");
+						    };
+						};
+
+						// Apply knockout bindings
+						ko.applyBindings(new Calculator());
+
+						// Enable keyboard controll
+						(function () {
+						    // Key codes and their associated calculator buttons
+						    var calculatorKeys = {
+						        48: "0", 49: "1", 50: "2", 51: "3", 52: "4", 53: "5", 54: "6",
+						        55: "7", 56: "8", 57: "9", 96: "0", 97: "1", 98: "2", 99: "3",
+						        100: "4", 101: "5", 102: "6", 103: "7", 104: "8", 105: "9",
+						        106: "x", 107: "+", 109: "-", 110: ".", 111: "÷", 8: "backspace",
+						        13: "=", 46: "c", 67: "c"
+						    };
+
+						    // Helper function to fire an event on an element
+						    function fireEvent(element, event) {
+						        if (document.createEvent) {
+						            // Dispatch for firefox + others
+						            var evt = document.createEvent("HTMLEvents");
+						            evt.initEvent(event, true, true);
+						            return !element.dispatchEvent(evt);
+						        } else {
+						            // Dispatch for IE
+						            var evt = document.createEventObject();
+						            return element.fireEvent('on' + event, evt)
+						        }
+						    }
+
+						    // Helper functions to add/remove HTML-element classes
+						    // as IE didn't support the classList property prior to IE10
+						    function hasClass(ele, cls) {
+						        return ele.className.match(new RegExp('(\\s|^)' + cls + '(\\s|$)'));
+						    }
+
+						    function addClass(ele, cls) {
+						        if (!hasClass(ele, cls)) ele.className += " " + cls;
+						    }
+
+						    function removeClass(ele, cls) {
+						        if (hasClass(ele, cls)) {
+						            var reg = new RegExp('(\\s|^)' + cls + '(\\s|$)');
+						            ele.className = ele.className.replace(reg, ' ');
+						        }
+						    }
+
+						    // Callback for every key stroke
+						    var keycallback = function (e) {
+						        // Check if the key was one of our calculator keys
+						        if (e.keyCode in calculatorKeys) {
+						            // Get button-element associated with key
+						            var element = document.getElementById("calculator-button-" + calculatorKeys[e.keyCode]);
+						            // Simulate button click on keystroke
+						            addClass(element, "active");
+						            setTimeout(function () { removeClass(element, "active"); }, 100);
+						            // Fire click event
+						            fireEvent(element, "click");
+						        }
+						    }
+
+						    // Attach a keyup-event listener on the document
+						    if (document.addEventListener) {
+						        document.addEventListener('keyup', keycallback, false);
+						    } else if (document.attachEvent) {
+						        document.attachEvent('keyup', keycallback);
+						    }
+
+						})();
+					</script>
+				</main>
+			</div>
+			<footer id="footer">CC0 Public Domain, 2022</footer>
+		</div>
+		<!-- THIS IS THE CSS !-->
+		<style>
+			        /* user styles */
+
+			        /* styles are what change the color and sizes of stuff on your site. */
+
+			        /* these are variables that are being used in the code
+			these tended to confuse some people, so I only kept
+			the images as variables */
+
+			        :root {
+			            --header-image: url('https://shibedevsite.neocities.org/rora.jpg');
+			            --body-bg-image: url('https://shibedevsite.neocities.org/imgs/arurora.gif');
+
+			            /* colors */
+			            --content: #DF77B8;
+			        }
+
+			        /* if you have the URL of a font, you can set it below */
+			        /* feel free to delete this if it's not your vibe */
+
+			        /* this seems like a lot for just one font and I would have to agree
+			but I wanted to include an example of how to include a custom font.
+			If you download a font file you can upload it onto your Neocities
+			and then link it! Many fonts have separate files for each style
+			(bold, italic, etc. T_T) which is why there are so many!
+
+			*/
+
+			        @font-face {
+			            font-family: Nunito;
+			            src: url('https://sadhost.neocities.org/fonts/Nunito-Regular.ttf');
+			        }
+
+			        @font-face {
+			            font-family: Nunito;
+			            src: url('https://sadhost.neocities.org/fonts/Nunito-Bold.ttf');
+			            font-weight: bold;
+			        }
+
+			        @font-face {
+			            font-family: Nunito;
+			            src: url('https://sadhost.neocities.org/fonts/Nunito-Italic.ttf');
+			            font-style: italic;
+			        }
+
+			        @font-face {
+			            font-family: Nunito;
+			            src: url('https://sadhost.neocities.org/fonts/Nunito-BoldItalic.ttf');
+			            font-style: italic;
+			            font-weight: bold;
+			        }
+
+			        body {
+			            font-family: 'Nunito', sans-serif;
+			            margin: 0;
+			            background-color: #08031A;
+			            /* you can delete the line below if you'd prefer to not use an image */
+			            background-size: 65px;
+			            color: #fceaff;
+			            background-image: "https://shibedevsite.neocities.org/imgs/arurora.gif";
+			        }
+
+			        * {
+			            box-sizing: border-box;
+			        }
+
+			        /* below this line is CSS for the layout */
+
+			        /* this is a CSS comment
+			to uncomment a line of CSS, remove the * and the /
+			before and after the text */
+
+
+			        /* the "container" is what wraps your entire website */
+			        /* if you want something (like the header) to be Wider than
+			the other elements, you will need to move that div outside
+			of the container */
+			        #container {
+			            max-width: 900px;
+			            /* this is the width of your layout! */
+			            /* if you change the above value, scroll to the bottom
+			  and change the media query according to the comment! */
+			            margin: 0 auto;
+			            /* this centers the entire page */
+			        }
+
+			        /* the area below is for all links on your page
+			EXCEPT for the navigation */
+			        #container a {
+			            color: #ED64F5;
+			            font-weight: bold;
+			            /* if you want to remove the underline
+			  you can add a line below here that says:
+			  text-decoration:none; */
+			        }
+
+			        #header {
+			            width: 100%;
+			            background-color: #5e4e8c;
+			            /* header color here! */
+			            height: 150px;
+			            /* this is only for a background image! */
+			            /* if you want to put images IN the header,
+			  you can add them directly to the <div id="header"></div> element! */
+			            background-image: var(--header-image);
+			            background-size: 100%;
+			        }
+
+			        /* navigation section!! */
+			        #navbar {
+			            height: 40px;
+			            background-color: #13092D;
+			            /* navbar color */
+			            width: 100%;
+			        }
+
+			        #navbar ul {
+			            display: flex;
+			            padding: 0;
+			            margin: 0;
+			            list-style-type: none;
+			            justify-content: space-evenly;
+			        }
+
+			        #navbar li {
+			            padding-top: 10px;
+			        }
+
+			        /* navigation links*/
+			        #navbar li a {
+			            color: #ED64F5;
+			            /* navbar text color */
+			            font-weight: 800;
+			            text-decoration: none;
+			            /* this removes the underline */
+			        }
+
+			        /* navigation link when a link is hovered over */
+			        #navbar li a:hover {
+			            color: #a49cba;
+			            text-decoration: underline;
+			        }
+
+			        #flex {
+			            display: flex;
+			        }
+
+			        /* this colors BOTH sidebars
+			if you want to style them separately,
+			create styles for #leftSidebar and #rightSidebar */
+			        aside {
+			            background-color: #241445;
+			            width: 200px;
+			            padding: 20px;
+			            font-size: smaller;
+			            /* this makes the sidebar text slightly smaller */
+			        }
+
+
+			        /* this is the color of the main content area,
+			between the sidebars! */
+			        main {
+			            background-color: #43256E;
+			            flex: 1;
+			            padding: 20px;
+			            order: 2;
+			        }
+
+			        /* what's this "order" stuff about??
+			allow me to explain!
+			if you're using both sidebars, the "order" value
+			tells the CSS the order in which to display them.
+			left sidebar is 1, content is 2, and right sidebar is 3! */
+
+			        */ #leftSidebar {
+			            order: 1;
+			        }
+
+			        #rightSidebar {
+			            order: 3;
+			        }
+
+			        footer {
+			            background-color: #13092D;
+			            /* background color for footer */
+			            width: 100%;
+			            height: 40px;
+			            padding: 10px;
+			            text-align: center;
+			            /* this centers the footer text */
+			        }
+
+			        h1,
+			        h2,
+			        h3 {
+			            color: #ED64F5;
+			        }
+
+			        h1 {
+			            font-size: 25px;
+			        }
+
+			        strong {
+			            /* this styles bold text */
+			            color: #ED64F5;
+			        }
+
+			        /* this is just a cool box, it's the darker colored one */
+			        .box {
+			            background-color: #13092D;
+			            border: 1px solid #ED64F5;
+			            padding: 10px;
+			        }
+
+			        /* CSS for extras */
+
+			        #topBar {
+			            width: 100%;
+			            height: 30px;
+			            padding: 10px;
+			            font-size: smaller;
+			            background-color: #13092D;
+			        }
+
+
+			        /* BELOW THIS POINT IS MEDIA QUERY */
+
+			        /* so you wanna change the width of your page?
+			by default, the container width is 900px.
+			in order to keep things responsive, take your new height,
+			and then subtrack it by 100. use this new number as the
+			"max-width" value below
+			*/
+
+			        @media only screen and (max-width: 800px) {
+			            #flex {
+			                flex-wrap: wrap;
+			            }
+
+			            aside {
+			                width: 100%;
+			            }
+
+			            /* the order of the items is adjusted here for responsiveness!
+			  since the sidebars would be too small on a mobile device.
+			  feel free to play around with the order!
+			  */
+			            main {
+			                order: 1;
+			            }
+
+			            #leftSidebar {
+			                order: 2;
+			            }
+
+			            #rightSidebar {
+			                order: 3;
+			            }
+
+			            #navbar ul {
+			                flex-wrap: wrap;
+			            }
+			        }
+		</style>
+	</body>
+</html>

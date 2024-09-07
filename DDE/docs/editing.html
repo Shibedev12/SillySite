@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DDE Docs - Editing </title>
+    <!-- The style.css file allows you to change the look of your web pages.
+         If you include the next line in all your web pages, they will all share the same look.
+         This makes it easier to make new pages for your site. -->
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+  </head>
+  <body>
+    <div class="text-container">
+    <audio controls autoplay loop>
+    <source src="https://eta.vgmtreasurechest.com/soundtracks/oneshot-ost/qzkarjpgik/29%20Simple%20Secrets.mp3">
+    </audio>
+    <p>Heres something to listen to ^_^</p>
+    
+    <h1>Welcome To The Editing Section!</h1>
+
+    <p>This is techinically the only section, but who said simple isnt great?</p>
+
+    <p>You won't get any sprigs for remaking the game, but it will be nice training for new devs!
+    the music code is at the very bottom!
+    Anything that says NOT FOR YOU or some variation of that is not for you. if you mess with it, you will likely break something.
+    </p>
+
+    <img src="https://shibedevsite.neocities.org/DDE/docs/imgs/notforyou.png">
+    <p>An example of a Not For You.</p>
+    
+    <p> Let us proceed. </p>
+    
+    <h2> Editing Music </h2>
+    
+    <p> So you're the kind who wants to make music, eh? thats good! </p>
+    <p> What you may see in the music section may confuse you, or it may not. who knows? </p>
+    <img src="https://shibedevsite.neocities.org/DDE/docs/imgs/music.png">
+    <p> You may see this and be confused. Worry not, as it is not too hard to pull off. </p>
+    <p> Here's how it works. </p> 
+    <ul>
+    <li>What note do you want to use? lets say you want to use the up note.</li>
+    <li>You would type "u" into the music constant.</li>
+    <li>const music = ["u",]; if you have notes coming after that note, place a comma after the closing quote. </li>
+    <li>so an example would be this: const music = ["u", "d"]</li>
+    <li>A full list of the note types are as follows:</li>
+    <li> "u" up. the up note. </li>
+    <li> "d" down. the down note. </li>
+    <li> "l" left. the left note. </li>
+    <li> "r" right. the right note. </li>
+    </ul>
+    <p> Makes sense? good! Thats pretty much it here. </p>
+    <p> Onto - <h2> Delays </h2> </p>
+    <p> Very few of these, but they are needed for a functional setup, so follow along. I'll list the 2 main delays for you to edit. </p>
+    <h3> The Start Delay </h3>
+    <p> Description: if you need a pause before starting the notes in your music, you can! </p>
+    <img src="https://shibedevsite.neocities.org/DDE/docs/imgs/startdelay.png">
+    <p> How it works: The delay is in ms. so 1000 ms is 1 full second. 2000 is 2 seconds, and so on and so forth. make sense? Good. onto the next delay. </p>
+    <h3> The Note Delay </h3>
+    <p> Description:  This is the delay between notes. you want it just right, or it will cause issues like note cutting. This delay is generally set at 900ms, or .90th of a second. </p>
+    <img src="https://shibedevsite.neocities.org/DDE/docs/imgs/notedelay.png">
+    <p> How it works: the delay is also in ms. 1000 ms is 1 second, and so on and so forth. </p>
+    <p> Now that you understand the delays, it is time for the extras. Quirks if you will. </p>
+    <h2> Quirks </h2>
+    <p> Not as few as the delays but there are enough to talk about them. <p>
+    <h3>moveNoteToBottom</h3>
+    <p> if you want to enable "freestyling", uncomment them. this will make it so that when the notes have reached the top, and are not moving, when the button is pressed, they return to the bottom. </p>
+    <img src="https://shibedevsite.neocities.org/DDE/docs/imgs/mntb.png">
+    <p> in order to enable them, simply uncomment them, and vice versa. </p>
+    <h3> Note Speed </h3>
+    <p> controls the speed of the notes. by default it is set at 80ms. speeding it up is making it smaller, and increasing is making it bigger. </p>
+    <img src="https://shibedevsite.neocities.org/DDE/docs/imgs/notespeed.png">
+    <h1> And that's it! You now know how to work Dance Dance Engine! </h1>
+    <h2> (What? no im not giving you a certificate! Get out of here!) </h2>
+    </div>
+  </body>
+</html>

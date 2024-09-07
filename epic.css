@@ -1,0 +1,27 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: url('rora.jpg');
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: scroll;
+    background-size: cover; /* Stretches the image to cover the entire viewport */
+    background-position: center; /* Centers the background image */
+    color: white; /* Sets the text color to white */
+}
+
+a {
+    color: green; /* Sets the link color to green */
+}
+
+a:visited {
+    color: green; /* Sets the visited link color to green */
+}
+
+a:hover {
+    color: lightgreen; /* Sets the hover link color to light green */
+}
+
+a:active {
+    color: darkgreen; /* Sets the active link color to dark green */
+}

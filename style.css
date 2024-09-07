@@ -1,0 +1,41 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: url('tile.png');
+    background-repeat: repeat; /* Prevents the image from repeating */
+    background-size: 15em;
+    background-attachment: scroll;
+    background-position: center; /* Centers the background image */
+    color: white; /* Sets the text color to white */
+}
+.text-container {
+    background-color: black; /* Background color of the box */
+    padding: 10px; /* Space between text and box edges */
+    border: 2px solid black; /* Border color and thickness (optional) */
+    display: inline-block; /* Ensures the box wraps around the content */
+    font-family: Arial, sans-serif; /* Change font to Arial */
+
+}
+
+.text-container p {
+    color: white; /* Text color to contrast with the background */
+    margin: 0; /* Remove default margin from <p> */
+    font-family: Arial, sans-serif; /* Change font to Arial */
+}
+
+a {
+    color: teal; /* Sets the link color to green */
+}
+
+a:visited {
+    color: green; /* Sets the visited link color to green */
+}
+
+a:hover {
+    color: lightgreen; /* Sets the hover link color to light green */
+}
+
+a:active {
+    color: darkgreen; /* Sets the active link color to dark green */
+}
